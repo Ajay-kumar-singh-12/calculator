@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" href="favicon.webp">
+    <style>
+    @media screen and (max-width: 455px) {
+        body {
+          font-size:12px;
+        }
+        #calccontainer {
+          width:454px;
+          height: 454px;
+        }
+      }
+    #calccontainer{
+      background-color: rgb(0, 0, 0);
+      width: 280px;
+      height: 420px;
+      border-radius: 5px;
+      margin: 10px 500px;
+     }
+     #display{
+      width:275px;
+      height: 40px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      margin-top: 4px;
+      border-radius: 5px;
+      text-align: end;
+      font-size: x-large ;
+      font-weight: bolder  ;
+      margin:5px 4px;
+                                            ;
+    
+     }
+     .main input{
+      
+      display:flexbox;
+      width: 60px;
+      height: 50px;
+      margin-left:  8px;
+      margin-top: 20px;
+      border-radius: 10px;
+      color: orange;
+      font-size: larger;
+      font-weight: 600;
+      background-color: rgb(26, 23, 23);
+      text-decoration: none;
+      border: 2px solid rgb(26, 23, 23);
+     }
+     .number input{
+      
+        display:flexbox;
+        width: 60px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 8px;
+        border-radius: 12px;
+        /* color: orange; */
+        font-size: larger;
+        font-weight: 600;
+        background-color: rgb(26, 23, 23);
+        text-decoration: none;
+        border: 2px solid rgb(26, 23, 23);
+       }
+      .seven{
+        color: white;
+      }
+      .multiply{
+        color: orange;
+      }
+      .eight{
+        color: white;
+      }
+      .nine{
+        color: white;
+      }
+      .twonumber input{
+      
+        display:flexbox;
+        width: 60px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 8px;
+        border-radius: 12px;
+        /* color: orange; */
+        font-size: larger;
+        font-weight: 600;
+        background-color: rgb(26, 23, 23);
+        text-decoration: none;
+        border: 2px solid rgb(26, 23, 23);
+       }
+    .four{
+        color: white;
+    }
+    .five{
+        color: white;
+    }
+    .six{
+        color: white;
+    }
+    .subtract{
+        color: orange;
+    
+    }
+    
+       .threenumber input{
+      
+        display:flexbox;
+        width: 60px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 8px;
+        border-radius: 12px;
+        /* color: orange; */
+        font-size: larger;
+        font-weight: 600;
+        background-color: rgb(26, 23, 23);
+        text-decoration: none;
+        border: 2px solid rgb(26, 23, 23);
+       }
+    
+         
+       .one{
+        color: white;
+    }
+    
+    .two{
+        color: white;
+    }
+    .three{
+        color: white;
+    }
+    .add{
+        color: orange;
+    
+    }
+    
+    .fournumber input{
+      
+        display:flexbox;
+        width: 60px;
+        height: 50px;
+        margin-top: 20px;
+      
+        border-radius: 12px;
+        /* color: orange; */
+        font-size: larger;
+        font-weight: 600;
+        background-color: rgb(26, 23, 23);
+        text-decoration: none;
+        border: 2px solid rgb(26, 23, 23);
+       }
+    .zero{
+        color: white;
+        margin-left: 80px;
+        
+    }
+    .dot{
+        margin-left: 10px;
+        color: white;
+    }
+    .equal{
+        margin-left: 6px;
+        color: orange;
+    }
+    input:hover{
+        background-color: black;
+    }
+     .fieldset{
+        display: flex;
+        width: 99.7%;
+        height: 60px;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        border: 2px solid black;
+    } 
+     *{
+        padding: 0%;
+        margin: 0%;
+     }
+     .name{
+        color: white;
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-top: 10px ;
+        margin-left: 10px;
+
+
+     }
+     .Calculator{
+        color: orange;
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-top: 10px ;
+     }
+     body{
+        background-color: antiquewhite;
+     }
+     .signin{
+        color: white;
+        margin-top: 19px;
+        font-family: sans-serif;
+        font-size: larger;
+        font-weight: 600;
+        margin-left: 56rem;
+        text-decoration: none;
+     }
+     /* .login{
+        color: orange;
+        margin-top: 19px;
+        font-family: sans-serif;
+        font-size: larger;
+        font-weight: 600;
+        margin-left: 5px;
+        text-decoration: none;
+     } */
+     input{
+       cursor: pointer;
+     }
+     .in{
+    
+        color: orange;
+        margin-top: 19px;
+        font-family: sans-serif;
+        font-size: larger;
+        font-weight: 600;
+        margin-left: 2px;
+        text-decoration: none;
+
+     }
+     a{
+        display: flex;
+     }
+</style>
+</head>
+<body>
+     <nav>
+        <div class="nav">
+        <fieldset class="fieldset">
+        <p class="name">
+            Cheap.<p class="Calculator">Calculator</p>
+        </p>
+        <a href="" class="signin">Sign <a class="in">In</a></a>
+        <!-- <a href="" class="login">Log In</a> -->
+        </fieldset>
+        </div>
+     </nav>
+    <fieldset id ="calccontainer">
+      <input id="display" class="display" type="text" name="display">
+        <br>
+        <div class="main">
+
+        <input type="button" class="c" value="C" onclick="clearDisplay()">
+        <input type="button" class="delete" value="Del" onclick="clearLast()">
+        <input type="button" class="modulous" value="%" onclick="appendToDisplay('%')">
+        <input type="button" class="divide" value="/" onclick="appendToDisplay('/')">
+        </div>
+
+        <div class="number">
+            <input type="button" class="seven" value="7"onclick="appendToDisplay('7')">
+            <input type="button" class="eight" value="8" onclick="appendToDisplay('8')"> 
+            <input type="button" class="nine" value="9" onclick="appendToDisplay('9')">
+            <input type="button" class="multiply" value="*" onclick="appendToDisplay('*')">
+         </div>
+
+         <div class="twonumber">
+            <input type="button" class="four" value="4" onclick="appendToDisplay('4')">
+            <input type="button" class="five" value="5" onclick="appendToDisplay('5')">
+            <input type="button" class="six" value="6"onclick="appendToDisplay('6')">
+            <input type="button" class="subtract" value="-" onclick="appendToDisplay('-')">
+         </div>
+
+         <div class="threenumber">
+            <input type="button" class="one" value="1" onclick="appendToDisplay('1')">
+            <input type="button" class="two" value="2" onclick="appendToDisplay(2)">
+            <input type="button" class="three" value="3" onclick="appendToDisplay(3)">
+            <input type="button" class="add" value="+" onclick="appendToDisplay(+)">
+         </div>
+          
+         <div class="fournumber">
+            <!-- <input type="button" class="one" value="1"> -->
+            <input type="button" class="zero" value="0" onclick="appendToDisplay(0)">
+            <input type="button" class="dot" value="." onclick="appendToDisplay(.)">
+            <input type="button" class="equal" value="=" onclick="calculate()">
+         </div>
+    </fieldset>
+    <script>
+      function appendToDisplay(value) {
+          document.getElementById('display').value += value;
+      }
+  
+      function clearDisplay() {
+          document.getElementById('display').value = '';
+      }
+
+      function clearLast() {
+          var displayValue = document.getElementById('display').value;
+          document.getElementById('display').value = displayValue.slice(0, -1);
+      }
+  
+      function calculate() {
+          try {
+              document.getElementById('display').value = eval(document.getElementById('display').value);
+          } catch(error) {
+              document.getElementById('display').value = 'Error';
+          }
+      }
+  </script>
+</body>
+</html>
